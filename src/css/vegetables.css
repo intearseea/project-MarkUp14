@@ -1,2 +1,105 @@
 /* названия классов начинаются со слова vegetables. Например: vegetables-item, vegetables-link и т.д
 Это делается во избежание одинаковых классов для разных элементов */
+
+
+.vegetables-title {
+    color: #141414;
+text-align: center;
+text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.10);
+font-family: DM Sans;
+font-size: 24px;
+font-weight: 500;
+line-height: 1.16;
+letter-spacing: -0.04em;
+text-transform: uppercase;
+padding-bottom: 14px;
+}
+.vegetables-subtitle {
+    color: #141414;
+text-align: center;
+text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.10);
+font-family: DM Sans;
+font-size: 14px;
+font-weight: 400;
+line-height: 1.2;
+letter-spacing: -0.04em;
+padding-bottom: 40px;
+}
+.veg-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.veg-item {
+    width: 335px;
+    height: 443px;
+    background: #EAF7E5;
+    border-radius: 20px;
+}
+.text-cont {
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-bottom: 40px;    
+}
+.veg-item-title {
+color: #141414;
+font-family: DM Sans;
+font-size: 24px;
+font-weight: 700;
+line-height: 1.16;
+letter-spacing: -0.04em;
+padding-bottom: 8px;
+
+}
+.veg-item-text {
+color: #141414;
+font-family: DM Sans;
+font-size: 14px;
+font-weight: 400;
+line-height: 1.2;
+letter-spacing: 0.02em;
+}
+.vegetables-image{
+    display: inline-block;
+    
+}
+.vegetables-shadow-icon{
+    fill: #141414;
+    opacity: 0.10000000149011612;
+    filter: blur(13.591408729553223px);
+}
+.veg-item-price {
+color: #141414;
+font-family: DM Sans;
+font-size: 14px;
+font-weight: 500;
+line-height: 1.2;
+letter-spacing: -0.04em;
+padding-bottom: 20px;
+padding-left: 20px;
+}
+
+.vegetables-button{
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #FC8A11;
+    border: 1px solid #FC8A11;
+
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.10);
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.3;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    transform: rotate(-14deg);
+}
+.vegetables-strelka-icon{
+    transform: rotate(15deg);
+}
