@@ -170,11 +170,6 @@
     }
 }
 
-/* @media screen and (min-width: 375px) {
-    .container {
-        max-width: 365px;
-    }
-} */
 
 @media screen and (min-width: 768px) {
     .container {
