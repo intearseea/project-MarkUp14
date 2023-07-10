@@ -196,9 +196,15 @@
   padding: 12px 24px;
   border: none;
   border-radius: 100px;
-  background: #fc8a11;
+  background-color: var(--basic-orange);
   margin-top: 20px;
   width: 92px;
+  cursor: pointer;
+}
+
+.modal-btn-submit:hover,
+.modal-btn-submit:focus {
+  background-color: var(--basic-green);
 }
 
 .modal-girl {
