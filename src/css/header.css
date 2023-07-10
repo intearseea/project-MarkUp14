@@ -26,7 +26,10 @@ a:focus {
 .burger-menu-svg:focus {
   fill: #141414;
 }
-
+.basket-svg:hover,
+.basket-svg:focus {
+  stroke: #77ac63;
+}
 .header-div {
   display: flex;
   flex-direction: row;
@@ -78,7 +81,7 @@ a:focus {
   fill: #77ac63;
 }
 
-.menu-is-hidden {
+.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
