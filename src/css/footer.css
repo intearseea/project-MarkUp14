@@ -127,11 +127,7 @@
     fill: var(--basic-dark);
 }
 
-.footer-soc-icon:hover,
-.footer-soc-icon:focus {
-    fill: var(--basic-green);
-    transition: fill var(--transition);
-}
+
 
 .footer-address {}
 
@@ -244,6 +240,18 @@
 
     }
 
-    .footer-img-logo {}
+    .footer-soc-icon:hover,
+    .footer-soc-icon:focus {
+        fill: var(--basic-green);
+        transition: fill var(--transition);
+    }
+
+    .footer-img-logo {
+        margin-right: 166px;
+    }
+
+    .footer-nav {
+        margin-right: 166px;
+    }
 
 }
