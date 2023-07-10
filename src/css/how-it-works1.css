@@ -45,7 +45,6 @@
   .works-picture {
     display: flex;
     justify-content: center;
-    border-radius: 100px;
   }
 }
 
@@ -123,3 +122,6 @@
     width: 410px;
   }
 }
+/* Пока что можно добавить 2 метатега, остальные разбираюсь (разметила здесь как комент чтобы ничего не нарушить
+<meta name="description" content="Veggie Boost website, order the freshest vegetables, instant delivery, good customer service, lots of special offers">
+<meta name="keywords" content="vegetable, fresh vegetables, fast home delivery, quality food products, healthy way of eating ">*/
