@@ -1,2 +1,153 @@
 /* названия классов начинаются со слова wwcy. Например: wwcy-item, wwcy-link и т.д
 Это делается во избежание одинаковых классов для разных элементов */
+.wwcy-section {
+  padding: 80px 20px;
+  display: flex;
+}
+.wwcy-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.wwcy-title {
+  color: #141414;
+  text-align: center;
+  text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.16;
+  letter-spacing: -0.96px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.wwcy-txt {
+  color: #141414;
+  text-align: center;
+  text-shadow: 0px 4px 70px 0px rgba(0, 0, 0.1);
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.56px;
+  margin-bottom: 40px;
+}
+.wwcy-form {
+  margin-bottom: 40px;
+  position: relative;
+  width: 100%;
+}
+.wwcy-form-input {
+  width: 100%;
+  border-radius: 100px;
+  border: 1px solid #141414;
+  opacity: 0.30000001192092896;
+  height: 48px;
+  padding-left: 24px;
+}
+.wwcy-button {
+  border-radius: 100px;
+  background: #fc8a11;
+  padding: 15px 35px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.56px;
+  border: none;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.wwcy-button:hover,
+.wwcy-button:focus {
+  background-color: #a1c487;
+}
+.wwcy-image-box {
+  border-radius: 40px;
+  background-color: #faf3e7;
+  overflow: hidden;
+  padding-top: 30px;
+  background-image: radial-gradient(
+    rgba(161, 196, 135, 0.4) 2.51253px,
+    var(--basic-bege) 0
+  );
+  background-position: 27px 30px;
+  background-size: 46.6px 45.2px;
+}
+.wwcy-image {
+}
+@media screen and (min-width: 320px) {
+  .wwcy-container {
+    max-width: 375px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .wwcy-container {
+    max-width: 704px;
+  }
+  .wwcy-leftside-box {
+  }
+  .wwcy-title {
+    max-width: 524px;
+    font-size: 40px;
+    line-height: 1.1;
+  }
+  .wwcy-txt {
+    max-width: 524px;
+    font-size: 18px;
+    line-height: 1.3;
+  }
+  .wwcy-form {
+    max-width: 350px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .wwcy-image-box {
+    width: 100%;
+    padding: 17px 38px 0 38px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .wwcy-container {
+    max-width: 1280px;
+    flex-direction: row;
+    gap: 80px;
+    align-items: center;
+    /* justify-content: space-between; */
+  }
+  .wwcy-leftside-box {
+    width: 614px;
+  }
+  .wwcy-title {
+    width: 100%;
+    max-width: none;
+    text-align: left;
+    font-size: 48px;
+    line-height: 1.04;
+    margin-bottom: 40px;
+  }
+  .wwcy-txt {
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.3;
+    letter-spacing: -0.72px;
+    margin-bottom: 80px;
+  }
+  .wwcy-image-box {
+    width: 526px;
+    background-image: radial-gradient(
+      rgba(161, 196, 135, 0.4) 2.51253px,
+      var(--basic-bege) 0
+    );
+    background-position: 27px 30px;
+    background-size: 46.6px 45.2px;
+    padding: 38px 0 0 0;
+  }
+  .wwcy-form {
+    margin-left: unset;
+  }
+  .wwcy-image {
+  }
+}
