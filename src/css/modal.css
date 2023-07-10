@@ -27,9 +27,9 @@
 
 .modal {
   position: absolute;
-  top: 50%;
+  top: 10px;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, 0) scale(1);
   width: 310px;
   min-height: 903px;
   padding: 20px 10px 10px 10px;
@@ -42,6 +42,7 @@
     0px 0px 130.5995330810547px 0px rgba(0, 0, 0, 0.04),
     0px 0px 223px 0px rgba(0, 0, 0, 0.05);
   transition: transform var(--transition);
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden .modal {
@@ -298,6 +299,8 @@
     width: 891px;
     min-height: 911px;
     padding: 40px;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
   }
 
   .modal-list-cards {
