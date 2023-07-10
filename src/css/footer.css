@@ -1,2 +1,231 @@
-/* названия классов начинаются со слова footer. Например: footer-item, footer-link и т.д
-Это делается во избежание одинаковых классов для разных элементов */
+.container {
+  margin: 0 auto;
+}
+
+.footer {
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: var(--basic-light-green);
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer-img-logo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.footer-img {
+  border-radius: 100px;
+}
+
+.footer-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.footer-logo-link {
+  display: flex;
+  gap: 8px;
+}
+
+.footer-logo-title {
+  color: var(--basic-dark);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-nav-list {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-nav-link {
+  color: var(--basic-dark);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
+}
+
+.footer-soc-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.footer-soc-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: calc((100% - 40px) / 3);
+}
+
+.footer-soc-item {
+  display: flex;
+  flex: none;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid var(--basic-dark);
+  background-color: transparent;
+}
+
+.footer-soc-item:hover,
+.footer-soc-item:focus {
+  border-color: var(--basic-green);
+  transition: border-color var(--transition);
+}
+
+.footer-soc {
+  display: flex;
+}
+
+.footer-soc-icon {
+  fill: var(--basic-dark);
+}
+
+.footer-address-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-address-tel {
+  min-width: 143px;
+  margin: 0 auto;
+}
+
+.footer-tel {
+  font-style: normal;
+  color: var(--basic-dark);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+}
+
+.footer-address-map {
+  font-style: normal;
+  max-width: 135px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-map {
+  color: var(--basic-dark);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 365px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 734px;
+  }
+
+  .footer-container {
+    gap: initial;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+  }
+
+  .footer-logo-nav {
+    max-width: 349px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-start;
+  }
+
+  .footer-img-logo {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .footer-soc-container {
+    margin-bottom: 40px;
+  }
+
+  .footer-soc-address {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-soc-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .footer-address-map {
+    text-align: start;
+  }
+
+  .footer-address-list {
+    align-content: start;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1216px;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    justify-content: start;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0;
+  }
+
+  .footer-logo-nav {
+    flex-wrap: nowrap;
+  }
+
+  .footer-soc-icon:hover,
+  .footer-soc-icon:focus {
+    fill: var(--basic-green);
+    transition: fill var(--transition);
+  }
+
+  .footer-img-logo {
+    margin-right: 166px;
+  }
+
+  .footer-nav {
+    margin-right: 166px;
+  }
+}

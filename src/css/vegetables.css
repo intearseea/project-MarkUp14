@@ -3,6 +3,7 @@
 
 .vegetables-section {
   margin-top: 80px;
+  margin-bottom: 80px;
 }
 .vegetables-title {
   color: #141414;
@@ -197,6 +198,12 @@
   letter-spacing: -0.04em;
   text-transform: uppercase;
   transform: rotate(-14deg);
+}
+
+.vegetables-button:hover {
+  background-color: #a1c487;
+  border: 1px solid #a1c487;
+  transition: var(--transition);
 }
 @media screen and (min-width: 768px) {
   .vegetables-button {
