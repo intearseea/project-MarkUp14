@@ -1,2 +1,124 @@
-/* названия классов начинаются со слова hiw1. Например: hiw1-item, hiw1-link и т.д
-Это делается во избежание одинаковых классов для разных элементов */
+.vegetables-baket-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  gap: 20px;
+}
+
+.works-title {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+.main-slogan {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.28;
+  letter-spacing: -0.04em;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+
+.secondary-slogan {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.28;
+  letter-spacing: -0.04em;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 767px) {
+  .how-it-works-first-part {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .works-title {
+    margin-bottom: 20px;
+  }
+  .main-slogan {
+    margin-bottom: 20px;
+  }
+  .works-picture {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+  }
+}
+
+@media (min-width: 768px) {
+  .how-it-works-first-part {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .vegetables-baket-container {
+    gap: 40px;
+  }
+  .vegetables-baket-first {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  .vegetables-baket-secondary {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 616px;
+  }
+  .works-title {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -1.6px;
+  }
+
+  .main-slogan {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.33;
+    letter-spacing: -0.72px;
+  }
+
+  .secondary-slogan {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.33;
+    letter-spacing: -0.72px;
+  }
+  .works-picture {
+    display: flex;
+    justify-content: center;
+    width: 310px;
+  }
+}
+@media (min-width: 1280px) {
+  .vegetables-baket-first {
+    gap: 119px;
+  }
+  .how-it-works-title {
+    width: 614px;
+  }
+  .works-title {
+    font-size: 48px;
+    line-height: 1.04;
+    letter-spacing: -1.92px;
+  }
+  .vegetables-baket-secondary {
+    gap: 40px;
+    max-width: 687px;
+  }
+  .works-picture {
+    display: flex;
+    justify-content: center;
+    width: 410px;
+  }
+}
