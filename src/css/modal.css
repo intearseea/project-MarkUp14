@@ -1,14 +1,27 @@
 /* .названия классов начинаются со слова modal. Например: modal-item, modal-link и т.д
 Это делается во избежание одинаковых классов для разных элементов */
 
-
-@media (min-width: 375px) { 
+@media (min-width: 375px) {
     .container {
         max-width: 365px;
     }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 .container {
     max-width: 375px;
+    width: 100%;
+    margin: 0 auto;
 }
 .modal {
     position: absolute;
@@ -55,10 +68,7 @@
 }
 
 .div-item-cards {}
-.input-check {
-    
-   
-}
+.input-check {}
 
  .item-cards {
     max-width: 295px;
@@ -93,14 +103,10 @@
    
 }
 .card-img {
-    /* max-width: 242px;
-    height: 200px; */
-
-
+    width: 94px;
+    height: 78px;
 }
-.modal-form {
-   
-}
+.modal-form {}
 
  
 .modal-svg {
@@ -120,6 +126,19 @@
     padding-left: 24px;
 }
 
+
+
+
+
+.check-svg {
+    stroke: #A1C487;
+}
+.div-check {
+    position: relative;
+}
+.modal-girl {
+    display: none;
+}
 .modal-input {
     max-width: 295px;
     width: 100%;
@@ -177,9 +196,13 @@
     width: 16px;
     height: 16px;
     position: absolute;
-   
-    
-       
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    }
+
+.input-check:checked + .check-label span {
+       background-color: #A1C487;          
 }
  .check-label {
     display: flex;
@@ -187,15 +210,10 @@
  }
 .input-check {
     position: absolute;
+   
 }
-
     
-.input-check:checked + .check-label span {
-background-color: #A1C487;
-}
-.modal-girl {
-    display: none;
-}
+
 }            /*  768  */
 
 
@@ -224,7 +242,12 @@ background-color: #A1C487;
     flex-direction: row;
     
   }
-
+.card-img {
+    width: 172px;
+    height: 142px;
+    width: 100%;
+    margin-bottom: 14px;
+}
 
 .modal-input {
     max-width: 360px;
@@ -269,6 +292,7 @@ background-color: #A1C487;
 .item-cards {
     width: calc((100% - 40px)/3);
     height: 308px;
+
 }
 .modal-list-cards {
     display: flex;
@@ -279,7 +303,12 @@ background-color: #A1C487;
     font-size: 24px;
     line-height: 1.17;
  }
-.comments {
+ .card-img {
+    width: 100%;
+    max-width: 243px;
+    height: 200px; 
+ }
+ .comments {
     max-width: 360px;
     width: 100%;
     height: 145px;
