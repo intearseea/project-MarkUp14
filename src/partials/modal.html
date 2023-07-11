@@ -1,4 +1,3 @@
-
 <div class="backdrop is-hidden" data-modal>
   <div class="modal">
     <button type="button" class="modal-btn-close" data-modal-close>
@@ -17,6 +16,7 @@
             id="cabbage"
             class="modal-check visually-hidden"
             value="true"
+            checked
           />
           <label for="cabbage" class="check-label">
             <span class="fake-checkbox"> </span>
@@ -163,6 +163,7 @@
             pattern="[^0-9]*"
             placeholder="Enter full name..."
             class="modal-input"
+            title="You can not enter numbers"
             required
           />
         </label>
@@ -178,12 +179,13 @@
         <label class="modal-label" aria-label="">
           <input
             type="tel"
-            pattern="\d*"
+            pattern="[0-9]{16,16}"
             minlength="16"
-            maxlength="19"
+            maxlength="16"
             name="card-number"
             placeholder="Enter card.."
             class="modal-input"
+            title="You have to enter 16 digits"
             required
           />
         </label>
@@ -207,4 +209,3 @@
     />
   </div>
 </div>
-
