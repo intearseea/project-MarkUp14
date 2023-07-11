@@ -89,8 +89,8 @@
 .veg-item {
   width: 335px;
   height: 443px;
-  background: #eaf7e5;
-  border-radius: 20px;
+
+  perspective: 600px;
 }
 @media screen and (min-width: 768px) {
   .veg-item {
@@ -112,10 +112,50 @@
     display: block;
     width: 389px;
     height: 465px;
-    background: #eaf7e5;
-    border-radius: 20px;
   }
 }
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 1s;
+}
+
+.card.is-flipped {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 20px;
+}
+
+.card__face--front {
+  background-color: #eaf7e5;
+}
+
+.card__face--back {
+  background: var(--basic-bege);
+  transform: rotateY(180deg);
+  padding: 75px 75px;
+}
+
+.veg-item-benefits {
+  color: #141414;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
 .text-cont {
   padding-top: 40px;
   padding-left: 20px;
@@ -133,10 +173,16 @@
   .veg-item-title {
     font-size: 28px;
   }
+  .card__face--back {
+    padding: 100px 75px;
+  }
 }
 @media screen and (min-width: 1280px) {
   .veg-item-title {
     font-size: 32px;
+  }
+  .veg-item-benefits {
+    font-size: 18px;
   }
 }
 .veg-item-text {
@@ -152,6 +198,9 @@
   }
 }
 .image-contnr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 300px;
   height: 250px;
   margin: auto;
@@ -191,19 +240,19 @@
   color: #fff;
   text-align: center;
   text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
-  font-family: DM Sans;
+  font-family: inherit;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.3;
   letter-spacing: -0.04em;
   text-transform: uppercase;
   transform: rotate(-14deg);
+  transition: background-color (--transition), border (--transition);
 }
 
 .vegetables-button:hover {
   background-color: #a1c487;
   border: 1px solid #a1c487;
-  transition: var(--transition);
 }
 @media screen and (min-width: 768px) {
   .vegetables-button {
