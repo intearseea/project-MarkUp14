@@ -299,8 +299,7 @@
     width: 891px;
     min-height: 911px;
     padding: 40px;
-    top: 60%;
-    transform: translate(-50%, -50%) scale(1);
+    top: 20px;
   }
 
   .modal-list-cards {
