@@ -8,22 +8,28 @@
 }
 
 .works-title {
+  max-width: 335px;
   font-size: 28px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: -0.04em;
   text-transform: uppercase;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
+
 .main-slogan {
+  max-width: 335px;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.28;
   letter-spacing: -0.04em;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
 .secondary-slogan {
+  max-width: 335px;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.28;
@@ -31,37 +37,22 @@
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 767px) {
-  .how-it-works-first-part {
+@media (min-width: 375px) {
+  .how-it-works-first-part .container {
     padding-left: 20px;
     padding-right: 20px;
-  }
-  .works-title {
-    margin-bottom: 20px;
-  }
-  .main-slogan {
-    margin-bottom: 20px;
-  }
-  .works-picture {
-    display: flex;
-    justify-content: center;
   }
 }
 
 @media (min-width: 768px) {
-  .how-it-works-first-part {
-    padding-left: 32px;
-    padding-right: 32px;
-    margin-bottom: 100px;
-  }
-  .vegetables-baket-container {
-    padding: 100px 0;
+  .how-it-works-first-part .container {
+    padding: 100px 32px;
     gap: 40px;
   }
+
   .vegetables-baket-first {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     gap: 8px;
   }
   .vegetables-baket-secondary {
@@ -70,9 +61,10 @@
     justify-content: flex-start;
     align-items: flex-start;
     gap: 20px;
-    max-width: 616px;
   }
+
   .works-title {
+    max-width: 386px;
     font-size: 40px;
     font-weight: 500;
     line-height: 1.1;
@@ -80,46 +72,51 @@
   }
 
   .main-slogan {
+    max-width: 317px;
     font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 1.33;
     letter-spacing: -0.72px;
   }
 
   .secondary-slogan {
+    max-width: 279px;
     font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 1.33;
     letter-spacing: -0.72px;
   }
   .works-picture {
-    display: flex;
-    justify-content: center;
     width: 310px;
   }
 }
 @media (min-width: 1280px) {
+  .how-it-works-first-part .container {
+    padding: 124px 32px;
+  }
+
   .vegetables-baket-first {
-    gap: 119px;
+    gap: 192px;
   }
-  .how-it-works-title {
-    width: 614px;
-  }
+
   .works-title {
+    max-width: 614px;
     font-size: 48px;
     line-height: 1.04;
     letter-spacing: -1.92px;
   }
   .vegetables-baket-secondary {
     gap: 40px;
-    max-width: 687px;
   }
+
   .works-picture {
-    display: flex;
-    justify-content: center;
     width: 410px;
+  }
+
+  .main-slogan {
+    max-width: 353px;
+  }
+
+  .secondary-slogan {
+    max-width: 294px;
   }
 }
 /* Пока что можно добавить 2 метатега, остальные разбираюсь (разметила здесь как комент чтобы ничего не нарушить
