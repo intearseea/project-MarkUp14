@@ -19,6 +19,11 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.hero-reviews-item {
+  display: flex;
+  align-items: center;
+}
+
 .hero-reviews-item:nth-child(2) {
   position: absolute;
   left: 28px;
@@ -50,6 +55,9 @@
 .hero-reviews-text {
   border-radius: 50px;
   border: 4px solid #ffffff;
+  transition-property: width, height, position, z-index;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-reviews-text {
