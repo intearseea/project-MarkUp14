@@ -3,7 +3,6 @@
 .wwcy-section {
   padding: 80px 20px;
   display: flex;
-  margin-bottom: 80px;
 }
 .wwcy-container {
   display: flex;
@@ -88,8 +87,7 @@
   .wwcy-container {
     max-width: 704px;
   }
-  .wwcy-leftside-box {
-  }
+
   .wwcy-title {
     max-width: 524px;
     font-size: 40px;
