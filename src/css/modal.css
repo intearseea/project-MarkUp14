@@ -130,7 +130,7 @@
 }
 
 .modal-check:checked + .check-label .fake-checkbox {
-  background-image: url(./img/img-modal/pick.svg);
+  background-image: url(../img/img-modal/pick.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 6px;
@@ -264,7 +264,7 @@
   }
 
   .modal-check:checked + .check-label .fake-checkbox {
-    background-image: url(./img/img-modal/pick-green.svg);
+    background-image: url(../img/img-modal/pick-green.svg);
     background-size: 8px;
   }
 
@@ -299,7 +299,7 @@
     width: 891px;
     min-height: 911px;
     padding: 40px;
-    top: 50%;
+    top: 60%;
     transform: translate(-50%, -50%) scale(1);
   }
 
