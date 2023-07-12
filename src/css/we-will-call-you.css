@@ -76,8 +76,7 @@
   background-position: 27px 30px;
   background-size: 46.6px 45.2px;
 }
-.wwcy-image {
-}
+
 @media screen and (min-width: 320px) {
   .wwcy-container {
     max-width: 375px;
@@ -114,7 +113,6 @@
     flex-direction: row;
     gap: 80px;
     align-items: center;
-    /* justify-content: space-between; */
   }
   .wwcy-leftside-box {
     width: 614px;
@@ -146,7 +144,5 @@
   }
   .wwcy-form {
     margin-left: unset;
-  }
-  .wwcy-image {
   }
 }

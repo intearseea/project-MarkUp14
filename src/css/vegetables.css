@@ -87,17 +87,26 @@
 }
 
 .veg-item {
-  width: 335px;
+  width: 305px;
   height: 443px;
 
   perspective: 600px;
 }
+
+@media screen and (min-width: 375px) {
+  .veg-item {
+    width: 335px;
+    height: 443px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .veg-item {
     width: 342px;
     height: 465px;
   }
 }
+
 @media screen and (min-width: 1280px) {
   .veg-item {
     width: 389px;
