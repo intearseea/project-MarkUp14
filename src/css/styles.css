@@ -142,3 +142,6 @@ html {
 .stt:active {
   opacity: 1;
 }
+::-webkit-scrollbar {
+  width: 0;
+}
