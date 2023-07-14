@@ -108,12 +108,12 @@ body {
   font-family: 'DMSans';
 }
 
-a:hover {
+/* a:hover {
   transition: var(--transition);
 }
 button:hover {
   transition: var(--transition);
-}
+} */
 
 html {
   scroll-behavior: smooth;
